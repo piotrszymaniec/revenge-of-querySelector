@@ -9,7 +9,10 @@
 
     const priceElement = document.createElement('span')
     priceElement.classList.add('card__price')
-    priceElement.innerHTML = `40 UAH`
+    //priceElement.innerHTML = `40 UAH`
+    //потому что мы не добавляем к элементу html-структуру с тегем
+    //мы можем отказаться от innerHTML в пользу textContent
+    priceElement.textContent = `40 UAH`
 
     // cardElement является родительским элементом для элемента priceElement, который является его дочерним элементом.
     // давайте посмотрим на конструктор класса Zhan Control

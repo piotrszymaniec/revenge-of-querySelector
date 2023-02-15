@@ -15,7 +15,10 @@
 
     const priceElement = document.createElement('span')
     priceElement.classList.add('card__price')
-    priceElement.innerHTML = `40 UAH`
+    //priceElement.innerHTML = `40 UAH`
+    //потому что мы не добавляем к элементу html-структуру с тегем
+    //мы можем отказаться от innerHTML в пользу textContent
+    priceElement.textContent = `40 UAH`
 
     // то же, что и выше, cardElement будет parentNode для priceElement
     cardElement.append(priceElement)
