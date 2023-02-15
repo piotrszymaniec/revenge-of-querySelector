@@ -1,0 +1,25 @@
+<html>
+
+<body>
+  <script>
+    const cardElement = document.createElement('div')
+    cardElement.classList.add('Card')
+    // document.body является родительским для элемента cardElement, который является его дочерним элементом.
+    // давайте посмотрим снова на конструктор класса Zhan Control
+    // constructor(parentNode: HTMLElement | null, tagName = 'div', className = '', content = '') {     
+    // document.body будет здесь parentNode для cardElement
+    const parentElement = document.body
+    // глядя на конструктор выше
+    // например  Card(document.body, ....)
+    parentElement.append(cardElement)
+
+    const priceElement = document.createElement('span')
+    priceElement.classList.add('card__price')
+    priceElement.innerHTML = `40 UAH`
+
+    // то же, что и выше, cardElement будет parentNode для priceElement
+    cardElement.append(priceElement)
+  </script>
+</body>
+
+</html>

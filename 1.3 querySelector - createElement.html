@@ -1,0 +1,22 @@
+<html>
+
+<body>
+  <div class="Card">
+
+  </div>
+  <script>
+    const cardElement = document.querySelector('.Card')
+
+    const priceElement = document.createElement('span')
+    priceElement.classList.add('card__price')
+    priceElement.innerHTML = `40 UAH`
+
+    // cardElement является родительским элементом для элемента priceElement, который является его дочерним элементом.
+    // давайте посмотрим на конструктор класса Zhan Control
+    // constructor(parentNode: HTMLElement | null, tagName = 'div', className = '', content = '') {          
+    // cardElement выполняет ту же роль, что и parentNode
+    cardElement.append(priceElement)
+  </script>
+</body>
+
+</html>

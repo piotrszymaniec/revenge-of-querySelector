@@ -1,0 +1,24 @@
+<html>
+
+<body>
+  <div class="Card">
+
+  </div>
+  <script>
+    class Card {
+      constructor(parentElementClassName) {
+        const cardElement = document.querySelector(parentElementClassName)
+
+        const priceElement = document.createElement('span')
+        priceElement.classList.add('card__price')
+        priceElement.innerHTML = `40 UAH`
+
+        cardElement.append(priceElement)
+      }
+    }
+
+    new Card('Card')
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<body>
+  <script>
+
+    class Card {
+      constructor(parentElement) {
+        const cardElement = document.createElement('div')
+        cardElement.classList.add('Card')
+        parentElement.append(cardElement)
+
+        const priceElement = document.createElement('span')
+        priceElement.classList.add('card__price')
+        priceElement.innerHTML = `${price} UAH`
+        cardElement.append(priceElement)
+      }
+    }
+
+    new Card(document.body)
+  </script>
+</body>
+
+</html>
